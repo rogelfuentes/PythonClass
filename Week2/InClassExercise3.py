@@ -42,7 +42,7 @@ while userItem != "done":
     total += price
     
 # Prompt the user to enter the price of the next item.
-    userItem = input("entert the price of the item or done: ")
+    userItem = input("Entert the price of the item or done: ")
 
 # Add up the total and calculate the tax.
 total += total * tax
