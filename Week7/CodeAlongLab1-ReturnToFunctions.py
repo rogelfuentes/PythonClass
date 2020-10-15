@@ -3,7 +3,7 @@ import MyFunction as func
 value = "yes"
 print(func.yesNoBooleanConverter(value))
 
-val = func.yesNoBooleanConverter(value)
+
 val1 = False
 print(func.booleanYesNoConverter(val1))
 

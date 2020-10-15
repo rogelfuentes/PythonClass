@@ -4,10 +4,8 @@
 # Create a new python file called ICE1.py. Using Import, import your new functions script in the ICE.py script.
 # Using the print() function, test and invoke the celsius and Fahrenheit functions.
 
-import random
+
 import MyFunction as func
-
-
 print(func.CToF(30))
 print(func.FToC(90))
 
@@ -17,7 +15,7 @@ print(func.FToC(90))
 # In the ICE1.py file and using the print() function, test and invoke the function using a non-null variable and a variable that is null.
 
 val = None
-print(func.nullToBooleanConvert(val))
+print(func.NullToBooleanConvert(val))
 
  
 
@@ -46,7 +44,7 @@ print(func.nullToBooleanConvert(val))
 
 # In the ICE1.py script, use the random generator and generate a number between 1 and 9. Pass the number into the getAnswer() function and print out the users fortune.
 
-
+import random
 r = random.randint(1,9)
 fortune = func.getAnswer(r)
 print(fortune)

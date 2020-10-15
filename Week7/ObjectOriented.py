@@ -1,12 +1,27 @@
-class Student:
-    firstName = "Rogel"
-    lastName = "Fuentes"
+# class Student:
+#     firstName = "Rogel"
+#     lastName = "Fuentes"
 
-studentFunction = Student()
+# studentFunction = Student()
 
-print (studentFunction)
-print(studentFunction.lastName)
+# print (studentFunction)
+# print(studentFunction.lastName)
 
-studentFunction.firstName = "Alfredo"
+# studentFunction.firstName = "Alfredo"
 
-print(studentFunction.firstName)
+# print(studentFunction.firstName)
+
+# ************
+
+class StudentData:
+    def __init__(self,first,last):
+        self.firstName = first
+        self.lastName = last
+
+studentA = StudentData("Carlos","Lopez")
+studentB = StudentData("Mario","Uzcategui")
+studentC = StudentData("Lorenzo","Snow")
+
+print(studentA.firstName, studentA.lastName)
+print(studentB.firstName, studentB.lastName)
+print(studentC.firstName, studentC.lastName)

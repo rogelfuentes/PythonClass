@@ -6,13 +6,13 @@ def yesNoBooleanConverter(val):
         return False
 
 def booleanYesNoConverter(val):
-    if val:
+    if val :
         return "Yes"
     else:
         return "No"
 
-def moveQueueValueConverter(val):
-    val = str(val).upper()
+def moveQueueValueConverter(value):
+    val = str(value).upper()
     if val == "R":
         return "Released"
     elif val == "H":
@@ -24,7 +24,7 @@ def moveQueueValueConverter(val):
     else: 
         return None
 
-def nullToBooleanConvert(value):
+def NullToBooleanConvert(value):
     return value != None
 
 def CToF(value):
