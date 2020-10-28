@@ -25,27 +25,27 @@
 # ice_cream.open_restaurant()
 # ice_cream.get_flavors()
  
-class Restaurant():
-    def __init__ (self, restaurant_name, cuisine_type):
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
-    def describe_restaurant(self):
-        print(self.restaurant_name)
-        print(self.cuisine_type)
-    def open_restaurant(self):
-        print(self.restaurant_name + " is open for business")
+# class Restaurant():
+#     def __init__ (self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#     def describe_restaurant(self):
+#         print(self.restaurant_name)
+#         print(self.cuisine_type)
+#     def open_restaurant(self):
+#         print(self.restaurant_name + " is open for business")
 
-class Ice_Cream_Stand(Restaurant):
-    def __init__ (self, restaurant_name, cuisine_type, flavors):
-        Restaurant.__init__(self, restaurant_name, cuisine_type )
-        self.flavors = flavors
-    def get_flavors(self):
-        print("Here are the flavors: ", self.flavors)
+# class Ice_Cream_Stand(Restaurant):
+#     def __init__ (self, restaurant_name, cuisine_type, flavors):
+#         Restaurant.__init__(self, restaurant_name, cuisine_type )
+#         self.flavors = flavors
+#     def get_flavors(self):
+#         print("Here are the flavors: ", self.flavors)
 
-ice_cream = Ice_Cream_Stand("My Ice Cream Shoppe", "Ice Cream", ["Vanilla", "Chocolate", "Strawberry"])
-ice_cream.describe_restaurant()
-ice_cream.open_restaurant()
-ice_cream.get_flavors()
+# ice_cream = Ice_Cream_Stand("My Ice Cream Shoppe", "Ice Cream", ["Vanilla", "Chocolate", "Strawberry"])
+# ice_cream.describe_restaurant()
+# ice_cream.open_restaurant()
+# ice_cream.get_flavors()
 
 
 

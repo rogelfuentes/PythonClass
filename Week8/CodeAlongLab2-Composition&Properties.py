@@ -32,3 +32,17 @@ class Student:
         print(person.firstName)
 
 a_student = Student(Person())
+
+# ****************************************************
+
+# class Student:
+#     def __init__(self,person):
+#         self.classes = []
+#     def enroll(self, course):
+#         self.classes.append(course)
+#     def schedule(self):
+#         return self.classes
+
+# class Teacher:
+#     def __init__(self):
+#         self.courses_tau

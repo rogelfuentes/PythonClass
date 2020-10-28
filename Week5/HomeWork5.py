@@ -13,22 +13,22 @@
 # #      #
 # #####
 
-# def topBottom():
-#     print("#######")
-# def x4():
-#     print(" #   # ")
-# def x2():
-#     print("  # #   ")
-# def x1():
-#     print("   #    ")
+def topBottom():
+    print("#######")
+def x4():
+    print(" #   # ")
+def x2():
+    print("  # #   ")
+def x1():
+    print("   #    ")
 
-# topBottom()
-# x4()
-# x2()
-# x1()
-# x2()
-# x4()
-# topBottom()
+topBottom()
+x4()
+x2()
+x1()
+x2()
+x4()
+topBottom()
 
 
 # Exercise #2: (5 points)
@@ -48,18 +48,18 @@
 #         print(f"{numbers} foot is equal to {inches} inches and {format(meters, '.2f')} meters" )
 #     convertion(number)
 
-# numbers = [0,1,2,3,4,5,6,7,8,9]
+numbers = [0,1,2,3,4,5,6,7,8,9]
 
-# for number in numbers:
-#     def convertion1(numbers):
-#         inches =  numbers * 0.0833
-#         print(f"{numbers} foot is equal to {inches} inches")
-#     def convertion2(numbers):
-#         inches =  numbers * 0.0833
-#         meters = inches * 39.3701
-#         print(f"{inches} inches is iqual to {format(meters, '.2f')} meters" )
-#     convertion1(number)
-#     convertion2(number)
+for number in numbers:
+    def convertion1(numbers):
+        inches =  numbers * 0.0833
+        print(f"{numbers} foot is equal to {inches} inches")
+    def convertion2(numbers):
+        inches =  numbers * 0.0833
+        meters = inches * 39.3701
+        print(f"{inches} inches is iqual to {format(meters, '.2f')} meters" )
+    convertion1(number)
+    convertion2(number)
 
 
 
@@ -77,39 +77,34 @@
 # 10 sided dice roll: 4 & 6
 
 
-# sides = int(input("Number of sides of the dice is: "))
+sides = int(input("Number of sides of the dice is: "))
 
-# for setes in range(1,6):
+for setes in range(1,6):
 
-#     def random(sides):
-#         import random
-#         num1 = random.randint(1,sides)   
-#         return num1
+    def random(sides):
+        import random
+        num1 = random.randint(1,sides)   
+        return num1
 
-#     for i in range(1,2):
-#         dice1 = random(sides)
-#         dice2 = random(sides)
-#         i += 1
+    for i in range(1,2):
+        dice1 = random(sides)
+        dice2 = random(sides)
+        i += 1
     
-#     setes += 1
-#     sides += 1
-#     print(f"{sides} sided dice roll: {dice1} & {dice2}")
+    setes += 1
+    sides += 1
+    print(f"{sides} sided dice roll: {dice1} & {dice2}")
 
 
 
 
-# sides = int(input("Number of sides of the dice is: "))
+sides = int(input("Number of sides of the dice is: "))
 
-# def random(sides):
-#     import random
-#     num1 = random.randint(1,sides)
-#     print(num1)    
-# random(sides)
-
-
-
-
-
+def random(sides):
+    import random
+    num1 = random.randint(1,sides)
+    print(num1)    
+random(sides)
 
 
 # Exercise #4: (5 points)
@@ -120,18 +115,27 @@
 # correctly, print "Nope. The number I was thinking of was x".
 # Use the following code to get you started:
 
-# # This is a guess the number game.
-# import random
-# # use the random.randint() function to generate a random number between 1 and 20.
-# secretNumber = random.randint(1, 20)
+# This is a guess the number game.
+import random
+# use the random.randint() function to generate a random number between 1 and 20.
+secretNumber = random.randint(1, 20)
 
-# print('I am thinking of a number between 1 and 20.')
+print('I am thinking of a number between 1 and 20, you have 6 chances to get the number')
 
-# guess = 0
-# guesses = 0
-# # Ask the player to guess 6 times.
-# for guessesTaken in range(1, 7):
-# ...
+guesses = 0
+
+# Ask the player to guess 6 times.
+for guesses in range(1, 7):
+    guessNum = int(input("Make a guess: "))
+    if guessNum == secretNumber:
+        print(f"{secretNumber} is the right one, good job!" )
+        break
+    elif guessNum < secretNumber:
+        print("Your guess is too low!")
+    elif guessNum > secretNumber:
+        print("Your guess is too high!")
+    
+print("The number of guesses: ", guesses)
 
 # Sample output:
 
@@ -147,4 +151,4 @@
 # Your guess is too low.
 # Take a guess.
 # 15
-####### "Good job! You guessed my number in 4 guesses!"
+###### "Good job! You guessed my number in 4 guesses!"

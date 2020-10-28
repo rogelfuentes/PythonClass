@@ -24,7 +24,7 @@ class Dog(Animal):
 class Cat(Animal):
     def __init__ (self, name):
         Animal.__init__(self)
-        print("Dog created")
+        print("Cat created")
         self.name = name
     def whoamI(self):
         print("I am a Cat, my name is", self.name)
@@ -36,13 +36,12 @@ class Cat(Animal):
 class Bird(Animal):
     def __init__ (self, name):
         Animal.__init__(self)
-        print("Dog created")
+        print("Bird created")
         self.name = name
     def whoamI(self):
         print("I am a Bird, my name is", self.name)
     def eat(self):
         print("I am now eating")
-
 
 def pet_speak(pet):
     print(pet.speak())
@@ -53,3 +52,6 @@ polly = Bird("Polly")
 
 pet_speak(fido)
 pet_speak(felix)
+# pet_speak(polly)
+
+# Polymorphism
